@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery LimitBox Test</title>
+	</head>
+	<style>
+		code { border: 1px solid #a2a2a2; background-color: #d2d2d2; width: 350px; }
+	</style>
+	<body>
+		<code>
+			$("#test1").limitBox({
+				limit: 200,
+				limitCounter: "counter1",
+				container: "container1"
+			});
+		</code>
+		<textarea id="test1" class="limitBoxes" cols="55" rows="5"></textarea>
+		<code>
+			$("#test2").limitBox({
+				limit: 100,
+				limitCounter: "counter2",
+				container: "container2"
+			});
+		</code>
+		<textarea id="test2" class="limitBoxes" cols="55" rows="5"></textarea>
+		<code>
+			$("#test3").limitBox({
+				limit: 10,
+				limitCounter: "counter3",
+				container: "container3"
+			});
+		</code>
+		<textarea id="test3" class="limitBoxes" cols="55" rows="5"></textarea>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="./jquery.limitbox.js"></script>
+		<script>
+			jQuery(window).ready(function($){
+				$("#test1").limitBox({
+					limit: 200,
+					limitCounter: "counter1",
+					container: "container1"
+				});
+				
+				$("#test2").limitBox({
+					limit: 100,
+					limitCounter: "counter2",
+					container: "container2"
+				});
+				
+				$("#test3").limitBox({
+					limit: 10,
+					limitCounter: "counter3",
+					container: "container3"
+				});
+			});
+		</script>
+	</body>
+</html>
