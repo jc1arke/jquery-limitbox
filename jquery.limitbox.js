@@ -8,23 +8,21 @@
  * @author JA Clarke
  * @since 2010/11/15
  * @version 1.0
- * 
- * For a demo of this plugin, goto http://cs.jc-interactive.co.za/jquery.limitbox/
  */
 
 (function($,undefined){
 	$.fn.limitBox = function(options){
 		// Default settings (non-public)
 		var settings = {
-			limit: 							160,
-			container: 					"limitBox-container",
-			containerClass: 		"limitBox-container",
-			limitCounter: 			"limit-box-count",
+			limit:			160,
+			container: 		"limitBox-container",
+			containerClass: 	"limitBox-container",
+			limitCounter: 		"limit-box-count",
 			limitCounterClass: 	"limit-box-count",
-			createCss: 					true,
-			errorClass: 				"box-error",
-			warningClass: 			"box-warning",
-			boxClass: 					"limit-box" 
+			createCss: 		true,
+			errorClass: 		"box-error",
+			warningClass: 		"box-warning",
+			boxClass: 		"limit-box" 
 		};
 		
 		// Iterate over the different boxes that it applies to
@@ -52,10 +50,10 @@
 			// Bind the key-events/special-events
 			element.bind({
 				keypress: function(e){ doLimit( e.target.value, settings, element ); },
-				keyup: 		function(e){ doLimit( e.target.value, settings, element ); },
-				paste: 		function(e){ doLimit( e.target.value, settings, element ); },
-				copy: 		function(e){ doLimit( e.target.value, settings, element ); },
-				cut: 			function(e){ doLimit( e.target.value, settings, element ); }
+				keyup: 	  function(e){ doLimit( e.target.value, settings, element ); },
+				paste: 	  function(e){ doLimit( e.target.value, settings, element ); },
+				copy: 	  function(e){ doLimit( e.target.value, settings, element ); },
+				cut: 	  function(e){ doLimit( e.target.value, settings, element ); }
 			});
 			
 			// Just a simple initialize of the counter :)
