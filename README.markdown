@@ -8,7 +8,7 @@ plugins etc that I could use, but I like demonstrating how one would go about do
 Quick demo
 ----------
 
-A test index.html is included that demonstrates how the plugin is used, but the gist of it is:
+A test index.html (or you can view it on <a href='http://jsfiddle.net/jcinteractive/pxjM9/embedded/result/' target='_blank'>jsFiddle</a>) is included that demonstrates how the plugin is used, but the gist of it is:
 
 	<textarea id="test" class="limitBoxes" cols="55" rows="5"></textarea>
 	<script src='http://code.jquery.com/jquery-latest.min.js'></script>
