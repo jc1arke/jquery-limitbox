@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery-limitbox by jc1arke</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery-limitbox</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/jc1arke/jquery-limitbox">View the Project on GitHub <small>jc1arke/jquery-limitbox</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jc1arke/jquery-limitbox/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jc1arke/jquery-limitbox/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jc1arke/jquery-limitbox">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="simple-text-limiting" class="anchor" href="#simple-text-limiting"><span class="octicon octicon-link"></span></a>Simple Text Limiting</h1>
+
+<p>I recently had to write a little widget for the front-end wherein the user has to be able to type, copy &amp; paste, etc etc some text
+into a text area, but he/she need to be limited on the amount of characters that they can use. Yes, there are plenty of pre-existing
+plugins etc that I could use, but I like demonstrating how one would go about doing something similar using just a bit of logic and jQuery :)</p>
+
+<h2>
+<a name="quick-demo" class="anchor" href="#quick-demo"><span class="octicon octicon-link"></span></a>Quick demo</h2>
+
+<p>A test index.html (or you can view it on <a href="http://jsfiddle.net/jcinteractive/pxjM9/embedded/result/" target="_blank">jsFiddle</a>) is included that demonstrates how the plugin is used, but the gist of it is:</p>
+
+<pre><code>&lt;textarea id="test" class="limitBoxes" cols="55" rows="5"&gt;&lt;/textarea&gt;
+&lt;script src='http://code.jquery.com/jquery-latest.min.js'&gt;&lt;/script&gt;
+&lt;script src='./js/jquery.limitbox.js'&gt;&lt;/script&gt;
+&lt;script&gt;
+$("#test").limitBox({
+  limit: 200,
+  limitCounter: "counter",
+  container: "container"
+});
+&lt;/script&gt;
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jc1arke">jc1arke</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
